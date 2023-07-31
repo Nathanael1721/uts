@@ -16,6 +16,7 @@ class _HomepageState extends State<Homepage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+        resizeToAvoidBottomInset: false,
         bottomNavigationBar: BottomNavigationBar(
             type: BottomNavigationBarType.fixed,
             onTap: (value) {
@@ -76,13 +77,15 @@ class _HomepageState extends State<Homepage> {
 
           children: [
             Container(
-              alignment: Alignment.topLeft,
+              alignment: Alignment.centerLeft,
               width: 500.00,
               height: 40.00,
               decoration: BoxDecoration(
                   //color: Colors.black,
                   image: DecorationImage(
-                image: ExactAssetImage('assets/images/logo.png',),
+                image: ExactAssetImage(
+                  'assets/images/logo.png',
+                ),
                 fit: BoxFit.fitHeight,
                 scale: 0.4,
               )),
@@ -96,7 +99,35 @@ class _HomepageState extends State<Homepage> {
                   ),
                 ],
               ),
+            ),
+            Container(
+              width: 375,
+              height: 80,
+              decoration: BoxDecoration(color: Colors.deepOrangeAccent),
+              child: Column(
+                children: [
+                  Container(
+                    width: 375,
+                    height: 80,
+                    child: Stack(
+                      children: [
+                        Positioned(
+                          left: 0,
+                          top: 0,
+                          child: Container(
+                            width: 375,
+                            height: 80,
+                            decoration:
+                                BoxDecoration(color: Colors.deepOrangeAccent),
+                          ),
+                        ),
+                      ],
+                    ),
+                  )
+                ],
+              ),
             )
+
             // Card(
             //   elevation: 1,
             //   margin: EdgeInsets.all(10),
