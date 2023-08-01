@@ -1,6 +1,5 @@
 import 'dart:convert';
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/container.dart';
 import 'package:uts/create.dart';
 import 'package:uts/edit.dart';
 import 'package:uts/home.dart';
@@ -21,7 +20,7 @@ class Data extends StatefulWidget {
 }
 
 class _DataState extends State<Data> {
-  int _counter = 0;
+  //int _counter = 0;
   int total = 0;
   var dataJson;
   var title = "";
@@ -85,7 +84,7 @@ class _DataState extends State<Data> {
         child: const Icon(Icons.add),
       ),
       appBar: AppBar(
-        title: Text("Data"),
+        title: Text("Data Pedagang Kaki Lima"),
       ),
       // body: ListView(children: [
       //   ListTile(

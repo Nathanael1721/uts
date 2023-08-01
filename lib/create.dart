@@ -16,19 +16,19 @@ class _CreatePageState extends State<CreatePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Add New Mahasiswa"),
+        title: const Text("Tambahkan Pedagang Kaki Lima"),
       ),
       body: Padding(
         padding: const EdgeInsets.all(14.0),
         child: Column(
           children: [
-            Text("Tambahkan Data Mahasiswa"),
+            Text("Tambahkan Data Pedagang Kaki Lima"),
             SizedBox(height: 20),
             TextField(
               controller: namaController,
               decoration: const InputDecoration(
                 border: OutlineInputBorder(),
-                labelText: 'Nama Mahasiswa',
+                labelText: 'Nama Pedagang Kaki Lima',
               ),
             ),
             SizedBox(height: 10),
@@ -36,7 +36,7 @@ class _CreatePageState extends State<CreatePage> {
               controller: nimController,
               decoration: const InputDecoration(
                 border: OutlineInputBorder(),
-                labelText: 'NIM',
+                labelText: 'No Telp. Pedagang Kaki Lima',
               ),
             ),
             SizedBox(height: 10),

@@ -1,8 +1,5 @@
 import 'dart:convert';
-import 'dart:ffi';
-
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:http/http.dart' as http;
 
@@ -21,10 +18,9 @@ class EditPage extends StatefulWidget {
 }
 
 class _EditPageState extends State<EditPage> {
-  @override
   final nimController = TextEditingController();
   final namaController = TextEditingController();
-
+  @override
   @override
   void initState() {
     // TODO: implement initState
@@ -36,19 +32,19 @@ class _EditPageState extends State<EditPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Edit New Mahasiswa"),
+        title: const Text("Edit Pedagang Kaki Lima"),
       ),
       body: Padding(
         padding: const EdgeInsets.all(14.0),
         child: Column(
           children: [
-            Text("Edit Data Mahasiswa"),
+            Text("Edit Data Pedagang Kaki Lima"),
             SizedBox(height: 20),
             TextField(
               controller: namaController,
               decoration: const InputDecoration(
                 border: OutlineInputBorder(),
-                labelText: 'Nama Mahasiswa',
+                labelText: 'Nama Pedagang Kaki Lima',
               ),
             ),
             SizedBox(height: 10),
@@ -56,7 +52,7 @@ class _EditPageState extends State<EditPage> {
               controller: nimController,
               decoration: const InputDecoration(
                 border: OutlineInputBorder(),
-                labelText: 'NIM',
+                labelText: 'No Telp. Pedagang Kaki Lima',
               ),
             ),
             SizedBox(height: 10),
